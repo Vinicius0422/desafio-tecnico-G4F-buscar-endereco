@@ -12,8 +12,8 @@ export const Input = ({ disabled, label, type, value }: InputProps) => {
 
     return(
         <div className="inputContainer flexColumn">
-            <label className="inputLabel">{label}</label>
-            <input className="inputBox inputNotAllowed" type={type} value={value} disabled />
+            <label className="inputLabel" htmlFor={label}>{label}</label>
+            <input className="inputBox inputNotAllowed" id={label} type={type} value={value} disabled={disabled} />
         </div>
     )
 }

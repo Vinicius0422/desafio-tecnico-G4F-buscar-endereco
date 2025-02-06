@@ -14,7 +14,6 @@ interface Endereco {
     estado: string;
     ibge: string;
     gia: string;
-    identidade: string;
     localidade: string;
     logradouro: string;
     regiao: string;
@@ -83,6 +82,7 @@ export const BuscarEndereco = () => {
                             <Input disabled={true} label="Localidade" value={endereco.localidade} type="text"/>
 
                             <Input disabled={true} label="UF" value={endereco.uf} type="text"/>
+                            <Input disabled={true} label="CEP" value={endereco.cep} type="text"/>
                             <Input disabled={true} label="Complemento" value={endereco.complemento} type="text"/>
                             <Input disabled={true} label="Estado" value={endereco.estado} type="text"/>
 
@@ -92,6 +92,7 @@ export const BuscarEndereco = () => {
 
                             <Input disabled={true} label="SIAFI" value={endereco.siafi} type="text"/>
                             <Input disabled={true} label="GIA" value={endereco.GIA} type="text"/>
+                            <Input disabled={true} label="UNIDADE" value={endereco.unidade} type="text"/>
                         </div>
                 )}
             </div>

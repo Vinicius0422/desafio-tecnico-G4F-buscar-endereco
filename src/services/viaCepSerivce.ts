@@ -5,7 +5,7 @@ const buscarEnderecoPorCep = (cep) => {
     .get(`https://viacep.com.br/ws/${cep}/json/`)
     .then((response) => {
       if (response.data.erro) {
-        throw new Error("CEP não encontrado.");
+        throw new Error("CEP não encontrado");
       }
       return response.data;
     })
