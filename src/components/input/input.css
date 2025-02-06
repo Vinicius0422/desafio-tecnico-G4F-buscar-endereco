@@ -1,0 +1,14 @@
+
+.inputContainer {
+    gap: 0.5rem;
+}
+
+.inputLabel {
+    font-size: 1rem;
+}
+
+@media (max-width: 640px) {
+    .inputLabel {
+        font-size: 0.875rem;
+    }
+}
